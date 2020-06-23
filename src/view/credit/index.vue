@@ -4,7 +4,6 @@
         <ul class="listCom list-arrow list-icon no-top">
             <listComponent v-for="(data,index) in datas" :class="data.cls" @click="$router.push(data.push)" :title="data.tit" :key="index">
                 <template slot="right">
-                    {{data.isOk}}
                     <i class="hasSuc" v-show="data.isOk">已完成</i>
                 </template>
             </listComponent>
